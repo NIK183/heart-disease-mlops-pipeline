@@ -1,0 +1,35 @@
+{
+    "best_model_name": "LogisticRegression",
+    "selection_criterion": "Highest nested-CV ROC-AUC; tie-breaker nested-CV accuracy. Held-out test metrics are not used for model selection.",
+    "best_params": {
+        "classifier__C": 0.1,
+        "classifier__class_weight": null,
+        "classifier__penalty": "l2"
+    },
+    "metrics": {
+        "Model": "LogisticRegression",
+        "CV Accuracy": 0.8387,
+        "CV ROC-AUC": 0.9025,
+        "Test Accuracy": 0.8852,
+        "Test Precision": 0.8387,
+        "Test Recall": 0.9286,
+        "Test F1": 0.8814,
+        "Test ROC-AUC": 0.9665
+    },
+    "features": [
+        "age",
+        "trestbps",
+        "chol",
+        "thalach",
+        "oldpeak",
+        "sex",
+        "cp",
+        "fbs",
+        "restecg",
+        "exang",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "test_set_note": "The held-out test split is evaluated only after model selection; it is not used as a selection signal."
+}
